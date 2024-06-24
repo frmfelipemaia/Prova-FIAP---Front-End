@@ -5,7 +5,7 @@
     --rosa-fiap :#F80D5A;
 }
 
-body{
+html,body{
     max-width: 1920px;
     margin: 0;
     padding: 0;
@@ -110,15 +110,70 @@ nav img {
 /* Fim do Header */
 
 .intro{
-    height: 1230px;
+    max-width: 100%;
+    line-height: 0;
+    margin: 0;
 }
 
-.animation-conhecimentos{
-    display: none;
+.animation-infinite-moving{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
 }
+
+.infite-1{
+    white-space: nowrap;
+    padding: 0;
+    letter-spacing: 1px;
+    animation: move-rtlf 10000ms linear infinite;
+}
+
+.cursos-text-animated{
+    font-size: 83px;
+    font-weight: 100;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 30px;
+    position: relative;
+    bottom: -23px;
+}
+
+@keyframes move-rtlf {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+
+.tecnologia-text-animated{
+    font-size: 83px;
+    font-weight: 100;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 30px;
+    position: relative;
+    bottom: 4px;
+}
+
+.infite-2{
+    white-space: nowrap;
+    padding: 0;
+    letter-spacing: 1px;
+    animation: move-lfrt 13000ms linear infinite;
+}
+
+.animation-infite-moving-2{
+    overflow: hidden;
+}
+
+@keyframes move-lfrt {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateX(150%);}
+}
+/* Animação dos textos que se movimentam horizontalmente em loop */
 
 .intro img{
-    width: 1495px;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
