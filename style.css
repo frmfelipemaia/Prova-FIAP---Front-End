@@ -177,3 +177,19 @@ nav img {
     margin-right: auto;
     width: 75%;
 }
+
+.animation-conhecimentos{
+    display: none;
+}
+
+.water-animation{
+    display: none;
+}
+
+.cursos{
+    display: none;
+}
+
+.FAQ{
+    display: none;
+}
